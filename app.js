@@ -1,6 +1,5 @@
  const age = parseInt( prompt("how old are you?") );
 
-
 if( isNaN(age) || age < 0) {
     console.log("Please write a real positive number");
 }else if( age < 18 ){
