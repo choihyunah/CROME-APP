@@ -11,5 +11,3 @@ if( isNaN(age) || age < 0) {
 }else if(age > 80) {
     console.log("You can do whatever you want");
 }
-
-
