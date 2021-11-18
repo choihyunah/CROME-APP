@@ -1,13 +1,19 @@
- const age = parseInt( prompt("how old are you?") );
+const title = document.querySelector("div.Hello:first-child h1");
 
-if( isNaN(age) || age < 0) {
-    console.log("Please write a real positive number");
-}else if( age < 18 ){
-    console.log("You are too young");
-}else if( age >= 18 && age <= 50 ) {
-    console.log("You can drink");
-}else if ( age > 50 && age <= 80 ) {
-    console.log("You have to take care your health");
-}else if(age > 80) {
-    console.log("You can do whatever you want");
+console.dir(title);
+
+function handleTitleClick() {
+    title.style.color = "orange";
 }
+
+function handleMouseEnter() {
+    title.innerText = "Mouse is here";
+}
+
+function handleMouseLeave() {
+    title.innerText = "Mouse is gone";
+}
+
+title.addEventListener("click", handleTitleClick);
+title.addEventListener("mouseenter", handleMouseEnter);
+title.addEventListener("mouseleave", handleMouseLeave);
